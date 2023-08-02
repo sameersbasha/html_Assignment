@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Positioning Elements Example</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            position: relative;
+            width: 600px;
+            height: 400px;
+            border: 1px solid #ccc;
+            margin: 50px auto;
+            padding: 10px;
+        }
+
+        img {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            margin: 0;
+        }
+
+        .first-paragraph {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            margin: 0;
+        }
+
+        .second-paragraph {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fd1hj4to4g9ba46.cloudfront.net%2Fquestions%2F443729.png&tbnid=lht6DEA2cv7f3M&vet=12ahUKEwjhgML6hLyAAxVtomMGHeolDB8QMygAegUIARDNAQ..i&imgrefurl=https%3A%2F%2Fwww.toppr.com%2Fask%2Fquestion%2Fthe-diagram-shows-the-position-of-an-element-x-in-the-periodic-tablewhat-is-the%2F&docid=ZqmrC56XrD7-CM&w=928&h=340&q=images%20for%20showing%20position%20of%20an%20element&ved=2ahUKEwjhgML6hLyAAxVtomMGHeolDB8QMygAegUIARDNAQ.jpg" alt=">
+        <p class="first-paragraph">This is the first paragraph of text.</p>
+        <p class="second-paragraph">This is the second paragraph of text.</p>
+    </div>
+</body>
+</html>
 
