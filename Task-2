@@ -1,1 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Layout</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
 
+    header {
+      height: 80px;
+      display: flex;
+      align-items: center;
+      background-color: #f0f0f0;
+    }
+
+    nav {
+      flex: 1;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    main {
+      flex: 1;
+      min-height: 400px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      background-color: #f9f9f9;
+    }
+
+    .box {
+      flex-basis: calc(33.33% - 20px);
+      height: 100px;
+      margin: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    .box:nth-child(1) {
+      background-color: #ff6347; /* Tomato Red */
+    }
+
+    .box:nth-child(2) {
+      background-color: #7fffd4; /* Aquamarine */
+    }
+
+    .box:nth-child(3) {
+      background-color: #9370db; /* Medium Purple */
+    }
+
+    footer {
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+
+  <main>
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+  </main>
+  <footer>
+    <p>Footer Content</p>
+  </footer>
+</body>
+</html>
